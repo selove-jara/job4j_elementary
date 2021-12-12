@@ -7,12 +7,13 @@ public class Point {
         double resultPowX = Math.pow(resultX, 2);
         double resultPowY = Math.pow(resultY, 2);
         double sum = resultPowX + resultPowY;
-        double result = Math.sqrt(sum);
-        return result;
+        return Math.sqrt(sum);
     }
 
     public static void main(String[] args) {
         double result = Point.distance(4, 5, 5, 6);
         System.out.println("result (4, 5) to (5, 6) " + result);
+        result = Point.distance(15, 8, 19, 12);
+        System.out.println("result (15, 8) to (19, 12) " + result);
     }
 }
