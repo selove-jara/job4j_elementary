@@ -2,13 +2,11 @@ package ru.job4j.converter;
 
 public class Converter {
     public static float rubleToEuro(float value) {
-        float rsl = value / 70;
-        return rsl;
+        return value / 70;
     }
 
     public static float rubleToDollar(float value) {
-        float rsl = value / 60; /* формула перевода рублей в доллары. */
-        return rsl;
+        return value / 60;
     }
 
     public static void main(String[] args) {
@@ -24,6 +22,31 @@ public class Converter {
         System.out.println("360 rubles are " + dollar + " dollar.");
         dollar = Converter.rubleToDollar(600);
         System.out.println("600 rubles are " + dollar + " dollar.");
+        float in = 140;
+        float expected = 2;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected == out;
+        System.out.println("140 rubles are 2. Test result : " + passed);
+        in = 490;
+        expected = 8;
+        out = Converter.rubleToEuro(in);
+        passed = expected == out;
+        System.out.println("490 rubles are 8. Test result : " + passed);                    //*проверочный*//
+        in = 700;
+        expected = 10;
+        out = Converter.rubleToEuro(in);
+        passed = expected == out;
+        System.out.println("700 rubles are 10. Test result : " + passed);
+        in = 180;
+        expected = 4;
+        out = Converter.rubleToDollar(in);
+        passed = expected == out;
+        System.out.println("180 rubles are 4. Test result : " + passed);                    //*проверочный*//
+        in = 360;
+        expected = 6;
+        out = Converter.rubleToDollar(in);
+        passed = expected == out;
+        System.out.println("360 rubles are 6. Test result : " + passed);
     }
 }
 
