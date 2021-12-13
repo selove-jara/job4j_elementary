@@ -31,7 +31,7 @@ public class Converter {
         expected = 8;
         out = Converter.rubleToEuro(in);
         passed = expected == out;
-        System.out.println("490 rubles are 8. Test result : " + passed);                    //*проверочный*//
+        System.out.println("490 rubles are 8. Test result : " + passed);
         in = 700;
         expected = 10;
         out = Converter.rubleToEuro(in);
@@ -41,7 +41,7 @@ public class Converter {
         expected = 4;
         out = Converter.rubleToDollar(in);
         passed = expected == out;
-        System.out.println("180 rubles are 4. Test result : " + passed);                    //*проверочный*//
+        System.out.println("180 rubles are 4. Test result : " + passed);
         in = 360;
         expected = 6;
         out = Converter.rubleToDollar(in);
