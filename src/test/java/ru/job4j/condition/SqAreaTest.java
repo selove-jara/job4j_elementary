@@ -33,8 +33,8 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP19K11Square6dot89() {
-        double out = SqArea.squarea(19, 11);
-        Assert.assertEquals(6.89, out, 0.01);
+    public void whenP18K11Square6dot18() {
+        double out = SqArea.squarea(18, 11);
+        Assert.assertEquals(6.18, out, 0.01);
     }
 }
