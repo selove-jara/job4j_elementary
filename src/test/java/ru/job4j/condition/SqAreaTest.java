@@ -15,7 +15,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP10K4Square2() {
+    public void whenP10K4Square4() {
         double expected = 4;
         double p = 10;
         double k = 4;
@@ -24,7 +24,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP14K6Square2() {
+    public void whenP14K7Square5dot35() {
         double expected = 5.35;
         double p = 14;
         double k = 7;
@@ -33,7 +33,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void whenP19K11Square2() {
+    public void whenP19K11Square6dot89() {
         double out = SqArea.squarea(19, 11);
         Assert.assertEquals(6.89, out, 0.01);
     }
