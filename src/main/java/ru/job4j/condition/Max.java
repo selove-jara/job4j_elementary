@@ -12,10 +12,7 @@ public class Max {
     }
 
     public static int max(int left, int right, int third, int thirda) {
-        return max(
-                left,
-                max(right, third, thirda)
-        );
+        return max(left, max(right, third, thirda));
     }
 
     public static void main(String[] args) {
