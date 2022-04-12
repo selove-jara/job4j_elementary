@@ -6,13 +6,12 @@ public class Max {
     }
 
     public static int max(int left, int right, int third) {
-        int tmp = max(right, third);
-        return max(left, tmp);
+        return max(left, max(right, third));
 
     }
 
-    public static int max(int left, int right, int third, int thirda) {
-        return max(left, max(right, third, thirda));
+    public static int max(int left, int right, int third, int fourth) {
+        return max(left, max(right, third, fourth));
     }
 
     public static void main(String[] args) {
