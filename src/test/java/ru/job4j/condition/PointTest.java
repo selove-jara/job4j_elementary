@@ -43,4 +43,13 @@ class PointTest {
         double dist = a.distance(b);
         assertNotEquals(expected, dist, 0.0);
     }
+
+    @Test
+    void distance3d() {
+        double expected = 5;
+        Point a = new Point(0, 3, 4);
+        Point b = new Point(4, 6, 3);
+        double dist = a.distance3d(b);
+        assertNotEquals(expected, dist, 0.0);
+    }
 }
